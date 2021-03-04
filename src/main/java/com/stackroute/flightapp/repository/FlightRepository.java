@@ -1,4 +1,4 @@
-package com.stackroute.flightapp.model.repository;
+package com.stackroute.flightapp.repository;
 
 import java.util.List;
 

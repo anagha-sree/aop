@@ -1,0 +1,19 @@
+2021-03-04 11:17:23 [main] INFO  c.s.flightapp.Flightapp2Application -
+				Starting Flightapp2Application using Java 11.0.7 on BLR-STR-DURAI with PID 24724 (C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.1.2.RELEASE\ibmnhtwave8\mvc\flightapp-2\target\classes started by Admin in C:\Users\Admin\Documents\workspace-spring-tool-suite-4-4.1.2.RELEASE\ibmnhtwave8\mvc\flightapp-2)
+2021-03-04 11:17:23 [main] INFO  c.s.flightapp.Flightapp2Application -
+				No active profile set, falling back to default profiles: default
+2021-03-04 11:17:32 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+				
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+

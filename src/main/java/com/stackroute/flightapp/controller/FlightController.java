@@ -1,4 +1,4 @@
-package com.stackroute.flightapp.model.controller;
+package com.stackroute.flightapp.controller;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.stackroute.flightapp.model.Flight;
-import com.stackroute.flightapp.model.service.FlightService;
+import com.stackroute.flightapp.service.FlightService;
 
 @RestController
 @RequestMapping("api/v1/flight")
@@ -24,8 +24,11 @@ public class FlightController {
 	private FlightService flightService;
 	
 	@GetMapping
-	public ResponseEntity<List<Flight>> getAllFlights(){
+	public ResponseEntity<List<Flight>> getAllFlights() throws Exception{
 		List<Flight> flightlist = flightService.getAllFlights();
+		if(flightlist.size() > 0) {
+			throw new Exception();
+		}
 		return new ResponseEntity<>(flightlist,HttpStatus.OK);
 	}
 	

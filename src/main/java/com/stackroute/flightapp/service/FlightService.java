@@ -1,4 +1,4 @@
-package com.stackroute.flightapp.model.service;
+package com.stackroute.flightapp.service;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.stackroute.flightapp.model.Flight;
-import com.stackroute.flightapp.model.repository.FlightRepository;
+import com.stackroute.flightapp.repository.FlightRepository;
 
 @Service
 public class FlightService {
